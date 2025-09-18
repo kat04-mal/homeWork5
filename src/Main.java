@@ -33,16 +33,14 @@ public class Main {
         //Задача 3
         int year = 2020;
         System.out.println("\nЗадача 3");
-        if (year >= 1584){
-            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
-                System.out.println(year + " год является високосным");
-            }
-            else {
-                System.out.println(year + " год не является високосным");
-            }
+        if (year < 1584){
+            System.out.println("Високосный год был введен в 1584 году");
+        }
+        else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+            System.out.println(year + " год является високосным");
         }
         else {
-            System.out.println("Високосный год был введен в 1584 году");
+            System.out.println(year + " год не является високосным");
         }
 
 
